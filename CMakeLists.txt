@@ -26,7 +26,7 @@ get_directory_property(SRE_LIBRARIES_SHARED DIRECTORY submodules/SimpleRenderEng
 
 # custom, centralized path to dependencies
 # set(SGE_LIBS_PATH "" CACHE PATH "Path to the SimpleGameEngine libraries")
-set(SGE_LIBS_PATH ${SRE_LIBS_PATH})
+set(SGE_LIBS_PATH ${SRE_LIBS_PATH}) #LOOOOOOK
 
 # where to look for cmake "find" modules
 set (CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
@@ -128,3 +128,5 @@ mark_as_advanced(
 mark_as_advanced(
 	SDL2MAIN_LIBRARY
 )
+
+add_subdirectory("project/Exercise3")
